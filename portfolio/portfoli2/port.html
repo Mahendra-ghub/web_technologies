@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mahendra Velpula</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#internship">Internship</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="section">
+        <div class="container">
+            <img src="Cv picture.jpg" alt="Profile Image" class="profile-img">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is the home section where you can introduce yourself and highlight your skills.</p>
+            <a href="https://github.com/Mahendra-ghub" class="btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/mahendra-velpula-02139b227/" class="btn">LinkedIn</a>
+        </div>
+    </section>
+    
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating responsive and interactive websites.</p>
+        </div>
+    </section>
+    
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p>University Name, Graduation Year</p>
+            </div>
+            <!-- Add more education items as needed -->
+        </div>
+    </section>
+
+    <!-- Other sections... -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Mahendra Velpula. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Update footer year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
