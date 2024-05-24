@@ -102,9 +102,9 @@ footer p {
 
 /* Profile Image Styling */
 .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* Changed border-radius to 50% for a circular profile image */
+    width: 300px;
+    height: 300px;
+    border-radius: 100%; /* Changed border-radius to 50% for a circular profile image */
     object-fit: cover;
     margin-bottom: 20px; /* Increased margin for better spacing */
     border: 5px solid #ffffff;
