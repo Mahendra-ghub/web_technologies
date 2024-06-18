@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr); /* Adjust to match the exact number of columns */
+            grid-template-rows: repeat(8, 1fr); /* Adjust to match the exact number of rows */
+            gap: 5px;
+            width: 640px; /* Total width */
+            height: 320px; /* Total height */
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First Column -->
+        <div class="box">I<sub>W</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>W</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+
+        <!-- Second Column -->
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>W</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+
+        <!-- Third Column -->
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>W</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+
+        <!-- Fourth Column -->
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>W</sub></div>
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+
+        <!-- Fifth Column -->
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>W</sub></div>
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+
+        <!-- Additional Rows -->
+        <div class="box">I<sub>Si</sub></div>
+        <div class="box">I<sub>K</sub></div>
+        <div class="box">I<sub>Si+K</sub></div>
+        <div class="box">I<sub>Si</sub></div>
+    </div>
+</body>
+</html>

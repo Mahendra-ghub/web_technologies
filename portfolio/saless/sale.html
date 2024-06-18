@@ -1,0 +1,180 @@
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Item</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container for the sales item */
+        .sales-item {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Left side containing the image, product details, and color buttons */
+        .left-side {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+
+        /* Image style */
+        .sales-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Product name style */
+        .item-details h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Description style */
+        .item-details p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Color and size buttons container */
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        /* Color buttons style */
+        .color-buttons {
+            display: flex;
+        }
+
+        .color-button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .color-button.active {
+            border-color: #4CAF50;
+        }
+
+        /* Size buttons style */
+        .size-buttons {
+            display: flex;
+        }
+
+        .size-button {
+            padding: 5px 10px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+
+        .size-button.active {
+            border-color: #4CAF50;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Right side containing the price, rating, buy option, and discount footer */
+        .right-side {
+            flex: 1 1 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Price style */
+        .price {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Rating style */
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating span {
+            margin-right: 5px;
+            color: #FFD700; /* gold color */
+        }
+
+        /* Buy option style */
+        .buy-option {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Discount footer style */
+        .discount-footer {
+            background-color: #FFA500; /* orange color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sales-item">
+        <div class="left-side">
+            <img src="nani.PNG" alt="Sales Item">
+            <div class="item-details">
+                <h2>Floral Shirt</h2>
+                <p>Description of the product goes here.</p>
+            </div>
+            <div class="buttons-container">
+                <div class="color-buttons">
+                    <button class="color-button active" style="background-color: #FF6347;"></button>
+                    <button class="color-button" style="background-color: #6495ED;"></button>
+                    <button class="color-button" style="background-color: #32CD32;"></button>
+                </div>
+                <div class="size-buttons">
+                    <button class="size-button active">S</button>
+                    <button class="size-button">M</button>
+                    <button class="size-button">L</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="price">$99.99</div>
+            <div class="rating">
+                <span>Rating:</span>
+                <span>4.5</span>
+                <img src="star.png" alt="star" style="width: 20px; height: 20px;">
+            </div>
+            <button class="buy-option">Buy Now</button>
+            <div class="discount-footer">Discount: 20%</div>
+        </div>
+    </div>
+</body>
+</html>
